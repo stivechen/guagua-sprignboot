@@ -10,7 +10,7 @@ import lombok.Setter;
  */
 @Getter
 @Setter
-public abstract class BizException extends Exception {
+public abstract class BizException extends RuntimeException {
 
     String code;
 

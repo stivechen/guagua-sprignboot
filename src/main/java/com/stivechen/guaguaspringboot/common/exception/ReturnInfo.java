@@ -39,7 +39,6 @@ public class ReturnInfo {
         if (null == e) {
             return new ReturnInfo(CommonCodeEnum.SYSTEM_ERROR, req.getRequestURI());
         }
-
         return new ReturnInfo(e.getMsg(), e.getCode(), req.getRequestURI());
     }
 
@@ -51,10 +50,10 @@ public class ReturnInfo {
      * @param e
      * @return
      */
-    public static ReturnInfo error(HttpServletRequest req, BizException e) {
+    public static ReturnInfo error(HttpServletRequest req, Exception e) {
         if (null == e) {
             return new ReturnInfo(CommonCodeEnum.SYSTEM_ERROR, req.getRequestURI());
         }
-        return new ReturnInfo(e.getMsg(), "500000", req.getRequestURI());
+        return new ReturnInfo(e.getMessage(), "500000", req.getRequestURI());
     }
 }
