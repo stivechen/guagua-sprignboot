@@ -1,5 +1,6 @@
-package com.stivechen.guaguaspringboot.common.exception;
+package com.stivechen.guaguaspringboot.core.exception;
 
+import com.stivechen.guaguaspringboot.common.exceptions.CommonCodeEnum;
 import lombok.Data;
 
 import javax.servlet.http.HttpServletRequest;

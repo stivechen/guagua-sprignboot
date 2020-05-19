@@ -1,4 +1,4 @@
-package com.stivechen.guaguaspringboot.common.exception;
+package com.stivechen.guaguaspringboot.core.exception;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 public abstract class BizException extends RuntimeException {
 
-    String code;
+    protected String code;
 
-    String msg;
+    protected String msg;
 }

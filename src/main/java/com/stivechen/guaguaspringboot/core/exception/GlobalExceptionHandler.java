@@ -1,4 +1,4 @@
-package com.stivechen.guaguaspringboot.common.exception;
+package com.stivechen.guaguaspringboot.core.exception;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;

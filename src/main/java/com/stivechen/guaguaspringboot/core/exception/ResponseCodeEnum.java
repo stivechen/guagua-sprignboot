@@ -1,4 +1,4 @@
-package com.stivechen.guaguaspringboot.common.exception;
+package com.stivechen.guaguaspringboot.core.exception;
 
 /**
  * 错误码枚举接口
